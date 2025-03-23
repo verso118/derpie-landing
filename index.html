@@ -10,9 +10,8 @@
     body {
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      background: url("https://i.imgur.com/L9pMw5Y.png") no-repeat center center fixed;
-      background-size: cover;
-      color: #000;
+      background: linear-gradient(135deg, #1f1c2c, #928DAB);
+      color: #fff;
       text-align: center;
       padding: 0;
     }
@@ -30,26 +29,23 @@
       max-width: 300px;
       border-radius: 20px;
       box-shadow: 0 0 40px rgba(255, 0, 204, 0.4);
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin: 30px 0 10px;
-      font-weight: bold;
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra para mayor contraste */
-      background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro para el recuadro */
-      padding: 10px 20px;
-      border-radius: 10px;
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       max-width: 600px;
       margin-bottom: 30px;
-      font-weight: bold;
-      background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro para el recuadro */
-      padding: 10px 20px;
-      border-radius: 10px;
     }
 
     .btn {
